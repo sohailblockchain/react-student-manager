@@ -1,0 +1,144 @@
+/* Basic page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 8px 0;
+  font-size: 2.3rem;
+}
+
+.header p {
+  color: #64748b;
+}
+
+.header .lesson {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Form styling */
+.student-form {
+  display: grid;
+  gap: 12px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.student-form h2 {
+  margin-top: 0;
+}
+
+.student-form label {
+  font-weight: bold;
+}
+
+.student-form input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+}
+
+.student-form button {
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+/* Student list styling */
+.student-section {
+  margin-top: 30px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title span {
+  background: #e2e8f0;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+
+.student-list {
+  display: grid;
+  gap: 12px;
+}
+
+.student-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.student-card h3,
+.student-card p {
+  margin: 4px 0;
+}
+
+.student-card p {
+  color: #64748b;
+}
+
+.delete-button {
+  border: 0;
+  border-radius: 6px;
+  padding: 9px 14px;
+  background: #fee2e2;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  color: #64748b;
+}
+
+/* Make the application comfortable on smaller screens. */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .student-card {
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
